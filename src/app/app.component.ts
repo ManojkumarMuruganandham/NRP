@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project';
+
+  type:any;
+
+  
+  toggle(nav:any){
+    if(nav.opened){
+      nav.close()
+    }else{
+      nav.open();
+    }
+  }
+
 }

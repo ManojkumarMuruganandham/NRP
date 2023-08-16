@@ -1,0 +1,94 @@
+#bold{
+    color: #B18F04;
+    font-size: 24px;
+    font-weight: 700;
+}
+#thin{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 50%;
+}
+selectsection{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: end; */
+  
+    padding: 10px;
+  }
+  .item p{
+    color: black;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .item span{
+    color: red;
+  }
+  .item select{
+    border-color: #D7D7D7;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 50%;
+    width: 100%;
+  }
+  .item input{
+ opacity: 50%;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #D7D7D7;
+   height: 25px;
+   width: 100%;
+  }
+  .back button{
+    border: none;
+    background-color: white;
+    position: absolute;
+    right: 147px;
+  }
+  .reports{
+    margin-top: 50px;
+    position: relative;
+}
+
+#nameopt{
+  display: flex;
+  align-items: end;
+}
+.box{
+  border: 1px solid #d7d7d7;
+  padding: 12px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#head{
+  font-size: 12px;
+  color: black;
+  font-weight: 600;
+}
+.add button{
+  color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #665308;
+}
+.item p{
+  font-size: 12px;
+  color: black;
+}
+.item span{
+  color: red;
+}
+#dim{
+  font-size: 12px;
+  opacity: 50%;
+}
+.delete{
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+
+}
+.delete img{
+  width: 100%;
+}

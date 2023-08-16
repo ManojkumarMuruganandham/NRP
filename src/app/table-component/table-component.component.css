@@ -1,0 +1,27 @@
+.mat-mdc-table{
+    border: 1px solid #d7d7d7;
+    border-collapse: collapse;
+}
+.mdc-data-table__header-cell{
+    border: 1px solid #d7d7d7;
+}
+.mat-column-date{
+    border-left: 1px solid #d7d7d7;
+ 
+}
+.mat-column-consumable{
+    border-left: 1px solid #d7d7d7;
+ 
+}
+.mat-column-specification{
+    border-left: 1px solid #d7d7d7;
+ 
+}
+.mat-column-qty{
+    border-left: 1px solid #d7d7d7;
+ 
+}
+.mat-column-price{
+    border-left: 1px solid #d7d7d7;
+ 
+}

@@ -1,0 +1,74 @@
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+#bold{
+    color: #B18F04;
+    font-size: 24px;
+    font-weight: 700;
+}
+#thin{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 50%;
+}
+#line{
+    width: 5px;
+    height: 1px;
+    background-color: lightgray;
+}
+.logout a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+}
+.back button{
+    border: none;
+    background-color: white;
+    position: absolute;
+    right: 147px;
+  }
+  .skip{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+.pages{
+    background-color: #F5F5F5;
+    /* width: 166px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+    /* height: 47px; */
+    margin-bottom: 6px;
+    gap: 12px;
+}
+.num span{
+    opacity: 50%;
+}
+.num p{
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+}
+.msexcel{
+    width: 25px;
+    height: 25px;
+  }
+.msexcel img{
+  width: 100%;
+}
+#projectteam{
+    text-align: center;
+  }
+.reports{
+    margin-top: 50px;
+    position: relative;
+}

@@ -1,0 +1,86 @@
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+#bold{
+    color: #B18F04;
+    font-size: 24px;
+    font-weight: 700;
+}
+#thin{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 50%;
+}
+#line{
+    width: 5px;
+    height: 1px;
+    background-color: lightgray;
+}
+.logout a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.start{
+   display: flex;
+}
+.selectsection{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: end; */
+  
+    padding: 10px;
+  }
+  .item p{
+    color: black;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .item span{
+    color: red;
+  }
+  .item select{
+    border-color: #D7D7D7;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 50%;
+    width: 100%;
+  }
+  .item input{
+ opacity: 50%;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #D7D7D7;
+   height: 25px;
+   width: 100%;
+  }
+  .btn{
+    padding-top: 29px;
+  }
+  .btn a{
+    color: white;
+  }
+  .btn button{
+    background-color: #B18F04;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+  
+  }
+  .create button{
+    background-color: #665308;
+    color: white;
+    border-radius: 5px;
+    border: none;
+  }

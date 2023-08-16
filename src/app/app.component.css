@@ -1,0 +1,194 @@
+  /*sidebar css  */
+  
+  You can add global styles to this file, and also import other style files
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body{
+    background-color: #FFF8DC;
+  }
+   */
+  .example-container {
+    /* width: 97vw;
+    height: 97vh; */
+    }
+    
+    /* .example-sidenav-content {
+     
+    } */
+    /* .setting{
+      margin-top: 32px;
+    /* } */
+    /* .example-sidenav {
+      padding: 20px;
+    /* } */
+    /* .mat-drawer-side{
+      background-color: #FFF8DC !important;
+      border: none !important;
+    } */
+    /* .mat-mdc-list-base {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: space-around; 
+      height: 56vh; 
+      align-items: center;
+    }
+    .mat-mdc-list-base a{
+      display: flex;
+      align-items: center;
+    }
+    .mat-drawer-content{
+       display: flex !important; 
+       height: 12% !important;
+    }
+    .mat-drawer-container{
+      overflow: unset !important;
+    }
+    .mat-drawer-content{
+      overflow: unset !important;
+    }  */ 
+   /* .right-content{
+    background-color: white;
+     /* width: 1130px;  */
+     /* height: 643px;   */
+    /* border-radius: 10px;
+    padding: 25px; */
+/* 
+   } */
+
+  */
+
+
+  /*  */
+
+
+
+
+/* .mat-drawer-content,.mat-sidenav-content,.ng-star-inserted{
+margin-left: 0 !important;
+} */
+
+
+
+
+
+
+
+
+.extra {
+  flex: 1 1 auto;
+}
+
+.dashboard {
+  margin-left: 10px;
+}
+
+.sidenav-wrapper {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+}
+
+mat-sidenav {
+  background-color: rgba(255, 248, 220, 1);
+  width: 235px;
+  padding-top: 10px;
+}
+
+mat-sidenav-content {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  height: 70px;
+  width: 100%;
+  padding-left: 0px;
+  justify-content: center;
+  height: 100%;
+}
+
+/* // button span {
+//     margin: 10px;
+// } */
+
+.project {
+  height: 12px;
+}
+
+h3 {
+  height:0px;
+  color: gray;
+}
+
+/* // b {
+//     color: gray;
+//     padding-right: 10px;
+// } */
+
+
+
+#list{ 
+  display: none; 
+  background-color: white; 
+  padding: 16px;
+  border-radius: 5px;
+} 
+
+
+#list a{ 
+  text-decoration: none; 
+  color: black; 
+  font-size: 12px; 
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+} 
+/* // #list a:hover{ 
+//     color: goldenrod; 
+// }  */
+
+.projectreq{ 
+  /* // display: flex;  */
+  justify-content: space-evenly; 
+  color: black; 
+  /* // padding: 10px;  */
+  border-radius: 10px; 
+  /* // margin-bottom: 10px; 
+  // font-size: 12px; 
+  // font-weight: 200;
+   */
+} 
+
+.projectreq:hover{ 
+  background-color:white; 
+   
+} 
+
+.projectreq:hover #list{ 
+display: block; 
+}
+
+p {
+  font-size: 15px;
+  padding-top: 10px;
+  text-decoration: none;
+}
+#setting{
+  margin-top: 148px;
+}
+#list a:hover{
+color:goldenrod ;
+
+}
+.mat-drawer-side {
+  border: none !important;
+}
+#list img{
+  
+  width: 22px;
+  height: 22px;
+
+}

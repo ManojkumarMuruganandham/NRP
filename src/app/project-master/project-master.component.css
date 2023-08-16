@@ -1,0 +1,69 @@
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+#bold{
+    color: #B18F04;
+    font-size: 24px;
+    font-weight: 700;
+}
+#thin{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 50%;
+}
+#line{
+    width: 5px;
+    height: 1px;
+    background-color: lightgray;
+}
+.logout a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+}
+.btn button{
+    background-color: #665308;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    width: 55px;
+    height: 32px;
+    color: white;
+  }
+  .btn button a{
+    color: white;
+    text-decoration: none;
+  }
+  .btn{
+
+  
+  }
+  .item select{
+    border-color: #D7D7D7;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 50%;
+    /* width: 100%; */
+  }
+  .tableinfo{
+    line-height: 13px;
+    overflow: scroll;
+  }
+  .table{
+    width: 600px;
+  }
+  .table th,td{
+    font-size: 12px;
+  }
+  .item{
+    margin-bottom: 8px;
+
+  }

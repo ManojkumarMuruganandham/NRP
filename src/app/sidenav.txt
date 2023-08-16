@@ -1,0 +1,131 @@
+
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" style="width: 252px;">
+      <div class="pms">
+    
+        <img src="../assets/image/Frame 94.png" alt="">
+            
+     <div class="logo-content">
+        <p class="bold">PMS</p>
+        <p class="small">Project Monitoring System</p>
+     </div>
+    </div>
+<mat-nav-list>
+  <!-- <app-dashboard></app-dashboard> -->
+  <div class="dashboard">
+  <div class="image">
+    <img src="../assets/image/cube.png" alt="">
+    <a href="#">Dashboard</a>
+  </div>
+    
+</div>
+<a mat-nav-list-item>
+<div class="projectreq">
+
+  <div class="image">
+    <img src="../assets/image/stack.png" alt="">
+    <span>Project Requirement</span>
+  </div>
+  <ul>
+  
+      <li id="list">
+
+<a href="">Project Requirement</a>
+<a href="#">Consumables</a>
+<a href="#">Machinery</a>
+<a href="#">Man Power</a>
+<a href="#">Tools & Tackles</a>
+<a href="#">Instruments</a>
+<a href="#">Safety Tools</a>
+ </li>
+ </ul>
+</div>
+</a>
+<a mat-nav-list-item>
+  <!-- <app-dailyoperationdata></app-dailyoperationdata> -->
+  <div class="daily">
+    <div class="image">
+      <img src="../assets/image/collection.png" alt="">
+      <a href="#">Daily Operation Data</a>
+    </div>
+   
+</div>
+</a>
+<a mat-nav-list-item >
+  <!-- <app-report></app-report> -->
+  <div class="report">
+    <div class="image">
+      <img src="../assets/image/file-text.svg" alt="">
+            <span>Reports</span>
+  
+    </div>
+    <ul>
+  
+  
+        <li id="reportlist">
+<a [routerLink]="['reports']">Consumables Reports</a>
+<a [routerLink]="['machinery-report-page']">Machinery Reports </a>
+<a [routerLink]="['man-power-report-page']">Man Power Reports</a>
+<a  [routerLink]="['tools-tackles-page']">Tools & Tackles Reports</a>
+<a  [routerLink]="['instruments-report-page']">Instruments Reports</a>
+<a [routerLink]="['safety-report-page']">Safety Tools Reports</a>
+
+        </li>
+    </ul>
+</div>
+
+</a>
+
+<a mat-nav-list-item [routerLink]="['setting']" class="setting">
+  <!-- <app-setting></app-setting> -->
+  <div class="setting">
+  <div class="image">
+   <img src="../assets/image/settings.svg" alt="">
+   <span>Settings</span>
+  </div>
+
+    <ul>
+      
+        <li id="settinglist">
+
+<a href="#">Project Master</a>
+<a href="#">Project Code</a>
+<a href="#">Project Team</a>
+<a href="#">Project Access</a>
+
+
+        </li>
+    </ul>
+   
+</div>
+
+</a>
+
+<a mat-list-item>
+
+  <div class="footimg">
+    <img src="assets/image/logo.png" alt="PMS-LOGO">
+  </div>
+
+</a>
+</mat-nav-list>
+     
+    </mat-drawer>
+  
+
+    <div class="container cont-rr" id="right-content">
+      <div class="example-sidenav-content">
+        <button type="button" mat-button (click)="toggle(drawer)">
+          <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
+         
+        </button>
+      
+      </div>
+      <div class="right">
+        <router-outlet></router-outlet>
+      
+    
+      </div>
+        </div>
+  
+      </mat-drawer-container>
