@@ -1,14 +1,15 @@
-<div class ="container-fluid">
-    <div class="row">
+
+<div class="container-fluid">
+    . <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12">
             <header>
               
             <div class="top">
                 <div class="reports">
                     <div class="back">
-                        <button (click)="back('projectaccessone')"><mat-icon>arrow_back</mat-icon></button>
+                        <button (click)="back('projectaccesstwo')"><mat-icon>arrow_back</mat-icon></button>
                      </div>
-                    <p id="bold">Project Acess</p>
+                    <p id="bold">Project Access</p>
                     <p id="thin">Project Access / Create</p>
                 </div>
             
@@ -72,17 +73,17 @@
             <div class="item">
                 <p>Access</p>
                <select name="" id="">
-                <option value="">Project Manager</option>
+                <option value="">Engineer</option>
                </select>
             </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-2">
             <div class="item">
-                <p>Project Code</p>
-               <select name="" id="">
-                <option value="">All</option>
+                <p>Access</p>
+               <select name="" id="daily">
+                <option  value="">Daily Operation Data</option>
                </select>
-               <button>+</button>
+            <button id="add">+</button>
             </div>
         </div>
         <div class="line"></div>
@@ -114,24 +115,16 @@
             <div class="col-md-3 col-lg-2">
                 <div class="lorem">
                     <p id="dim">Access</p>
-                    <p>Project Manager</p>
+                    <p>Engineer</p>
                 </div>
             </div>
             <div class="col-md-3 col-lg-2">
                 <div class="lorem">
-                    <p id="dim">Personnel</p>
-                    <p>Project Code</p>
+                    <p id="dim">Access</p>
+                    <p>Daily Operation Data</p>
                     <img src="assets/image/Deletebtn.png" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="create">
-                <button (click)="forward('projectaccessthree')">Create</button>
-            </div>
-        </div>
-    </div>
 </div>
-

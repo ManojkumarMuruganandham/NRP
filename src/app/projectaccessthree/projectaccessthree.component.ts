@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
-  selector: 'app-projectaccesstwo',
-  templateUrl: './projectaccesstwo.component.html',
-  styleUrls: ['./projectaccesstwo.component.css']
+  selector: 'app-projectaccessthree',
+  templateUrl: './projectaccessthree.component.html',
+  styleUrls: ['./projectaccessthree.component.css']
 })
-export class ProjectaccesstwoComponent {
+export class ProjectaccessthreeComponent {
   constructor(private router:Router){}
   back(pageName:string):void{
 

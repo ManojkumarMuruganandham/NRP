@@ -99,7 +99,7 @@
   .lorem{
     position: relative;
   }
-  .lorem img{
+  .lorem button{
     position: absolute;
     top: 25px;
     right: 0px;

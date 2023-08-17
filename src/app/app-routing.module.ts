@@ -16,6 +16,8 @@ import { ProjectteamcreateComponent } from './projectteamcreate/projectteamcreat
 import { ProjectaccessComponent } from './projectaccess/projectaccess.component';
 import { ProjectaccessoneComponent } from './projectaccessone/projectaccessone.component';
 import { ProjectaccesstwoComponent } from './projectaccesstwo/projectaccesstwo.component';
+import { ProjectaccessthreeComponent } from './projectaccessthree/projectaccessthree.component';
+import { ProjectaccessfourComponent } from './projectaccessfour/projectaccessfour.component';
 
 // import { MachineryReportPageComponent } from './machinery-report-page/machinery-report-page.component';
 
@@ -87,6 +89,14 @@ const routes: Routes = [
 {
   path:'projectaccesstwo',
   component: ProjectaccesstwoComponent,
+},
+{
+  path:'projectaccessthree',
+  component: ProjectaccessthreeComponent,
+},
+{
+  path:'projectaccessfour',
+  component: ProjectaccessfourComponent,
 },
 ];
 

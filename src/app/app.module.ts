@@ -27,6 +27,9 @@ import { TableComponentComponent } from './table-component/table-component.compo
 import { ProjectaccessComponent } from './projectaccess/projectaccess.component';
 import { ProjectaccessoneComponent } from './projectaccessone/projectaccessone.component';
 import { ProjectaccesstwoComponent } from './projectaccesstwo/projectaccesstwo.component';
+import { ProjectaccessthreeComponent } from './projectaccessthree/projectaccessthree.component';
+import { ProjectaccessfourComponent } from './projectaccessfour/projectaccessfour.component';
+import { MachinarytableComponent } from './machinarytable/machinarytable.component';
 
 
 
@@ -50,6 +53,9 @@ import { ProjectaccesstwoComponent } from './projectaccesstwo/projectaccesstwo.c
     ProjectaccessComponent,
     ProjectaccessoneComponent,
     ProjectaccesstwoComponent,
+    ProjectaccessthreeComponent,
+    ProjectaccessfourComponent,
+    MachinarytableComponent,
 
     
  

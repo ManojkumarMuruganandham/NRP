@@ -86,21 +86,25 @@
     border: none;
     background-color: #665308;
   }
-  .item{
-    position: relative;
-  }
-  .item button{
-    position: absolute;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    background-color: #665308;
-  }
-  .lorem{
-    position: relative;
-  }
-  .lorem img{
-    position: absolute;
-    top: 25px;
-    right: 0px;
-  }
+#daily{
+    background-color: #d7d7d7;
+}
+.item{
+  position: relative;
+}
+.item button{
+  position: absolute;
+  border: none;
+  color: white;
+  background-color: #665308;
+  border-radius: 5px;
+
+}
+.lorem{
+  position: relative;
+}
+.lorem img{
+  position: absolute;
+  top: 24px;
+  left: 117px;
+}
