@@ -189,3 +189,30 @@ padding-left: 148px;
   border-radius: 5px;
   padding: 5px;
 }
+
+
+
+@media(min-width:320px) and (max-width:700px){
+
+  .locationbox{
+    width: unset;
+  }
+  .locationopt a{
+    left: 135px;
+  }
+  .reports{
+    position: relative;
+    padding-top: 68px;
+  }
+  .back{
+    position: absolute;
+    top: 36px;
+  }
+  .selectactivity select{
+    width: 87%;
+  }
+  .split{
+    margin-top: 7px;
+    margin-bottom: 9px;
+  }
+}

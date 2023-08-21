@@ -81,3 +81,28 @@
     height: 33px;
     margin-left: 3px;
   }
+
+
+
+  @media(min-width:320px) and (max-width:700px){
+    
+    .top{
+      padding-top: 50px;
+    }
+    
+#bold{
+  font-size: 19px;
+}
+
+    .box{
+      width: unset;
+      height: unset;
+    }
+    .add-item input{
+      width: unset;
+    }
+    .add-item{
+      display: flex;
+      justify-content: space-between;
+    }
+  }

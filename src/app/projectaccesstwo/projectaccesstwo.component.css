@@ -104,3 +104,24 @@
     top: 25px;
     right: 0px;
   }
+
+  @media(min-width:320px) and (max-width:700px){
+
+    #bold{
+      margin-top: unset;
+      font-size: 19px;
+    }
+    .top{
+      padding-top: 59px;
+    }
+    .projectcode select{
+      width: 100%;
+    }
+    .item input{
+      width: 100%;
+    }
+    .item select{
+      width: 100%;
+    }
+    
+  }

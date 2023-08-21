@@ -139,7 +139,7 @@
     }
    .tableinfo {
     font-size: 12px;
-     color: black;
+
    }
    #td{
     font-weight: 500;
@@ -147,3 +147,39 @@
    #projecthead{
     text-align: center;
    }
+
+@media(min-width:320px) and (max-width:700px){
+  
+#bold{
+  margin-top: unset;
+  font-size: 19px;
+}
+.top{
+  padding-top: 59px;
+}
+.back button{
+  top: 30px;
+  left:8px ;
+}
+
+.options{
+  width: 135px;
+}
+
+.skip{
+  gap: 20px;
+}
+
+.tableinfo{
+  overflow: scroll;
+}
+
+.table td img{
+  width: 17px;
+    height: 19px;
+}
+
+}
+
+
+  

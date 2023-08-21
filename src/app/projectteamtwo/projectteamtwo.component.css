@@ -72,3 +72,38 @@
     margin-top: 50px;
     position: relative;
 }
+
+
+
+
+@media(min-width:320px) and (max-width:700px){
+
+.top{
+    padding-top: 62px;
+}
+.back button{
+    right: unset;
+    top: -26px;
+}
+    .reports{
+        margin-top: unset;
+    }
+    #bold{
+        font-size: 19px;
+    }
+    .options{
+        width: 135px;
+    }
+
+    .skip{
+        gap:unset
+    }
+    .table{
+        font-size: 9px;
+     
+    }
+    .table td img{
+        width: 13px;
+        height: 18px;
+    }
+}

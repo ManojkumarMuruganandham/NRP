@@ -6,186 +6,167 @@ import { MatPaginator } from '@angular/material/paginator';
 
 interface Country {
 	id?: number;
-	consumable: string;
-	specifiction: string;
-	qty: string;
-	price: string;
-  status:string;
-  col1:string;
-  col2:string;
+	date:any;
+	description: string;
+	qty: number;
+	price:number;
+  Qty:number;
+  Price:number;
+
 }
 const COUNTRIES: Country[] = [
   // Your country objects here
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price: '',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price: '',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price: '',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-    price: '',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-    consumable: '',
-    specifiction: '',
-		qty:'',
-		price: '',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'01.01.2024',
+    description:'test',
+    qty:2,
+    price:150,
+    Qty:1,
+    Price:100
 	},
   
 ];

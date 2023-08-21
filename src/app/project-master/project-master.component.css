@@ -67,3 +67,33 @@
     margin-bottom: 8px;
 
   }
+
+
+  @media(min-width:320px) and (max-width:700px){
+
+.top{
+  padding-top: 50px;
+}
+#bold{
+  font-size: 19px;
+}
+.options{
+  width: 135px;
+}
+
+.item p{
+  font-size: 12px;
+}
+
+.tableinfo{
+  line-height: unset;
+  overflow: scroll;
+}
+.table{
+  width: unset;
+}
+.table td img{
+  width: 18px;
+  height: 19px;
+}
+  }

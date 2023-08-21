@@ -6,186 +6,167 @@ import { MatPaginator } from '@angular/material/paginator';
 
 interface Country {
 	id?: number;
-	consumable: string;
-	specifiction: string;
+	date: string;
+	description: string;
 	qty: string;
 	price: string;
-  status:string;
-  col1:string;
-  col2:string;
+  Qty:string;
+  Price:string;
+  
 }
 const COUNTRIES: Country[] = [
   // Your country objects here
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+		date:'test',
+    description:'test',
+    qty: 'test',
+    price: 'test',
+    Qty:'test',
+    Price:'test'
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price: '',
-    status:'',
-    col1:'',
-    col2:'',
-	},
-  {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price: '',
-    status:'',
-    col1:'',
-    col2:'',
-	},
-  {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price: '',
-    status:'',
-    col1:'',
-    col2:'',
-	},
-  {
-		consumable: '',
-    specifiction: '',
-		qty:'',
+    date:'',
+    description:'',
+    qty: '',
     price: '',
-    status:'',
-    col1:'',
-    col2:'',
+    Qty:'',
+    Price:''
 	},
   {
-    consumable: '',
-    specifiction: '',
-		qty:'',
-		price: '',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
 	},
   {
-		consumable: '',
-    specifiction: '',
-		qty:'',
-		price:'',
-    status:'',
-    col1:'',
-    col2:'',
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
+	},
+  {
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
+	},
+  {
+    date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
+	},
+  {
+		date:'',
+    description:'',
+    qty: '',
+    price: '',
+    Qty:'',
+    Price:''
 	},
   
 ];
