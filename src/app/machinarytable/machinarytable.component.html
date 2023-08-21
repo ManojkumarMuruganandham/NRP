@@ -1,58 +1,64 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="mat-elevation-z8" >
-                <mat-paginator [pageSizeOptions]="[5, 10, 20,50]" [pageSize]="10" aria-label="Select page">
-            </mat-paginator>
-                <table mat-table [dataSource]="dataSource">
-              
-                  <!-- Position Column -->
-                  <ng-container matColumnDef="position">
-                    <th mat-header-cell *matHeaderCellDef> Sno </th>
-                    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-                  </ng-container>
-              
-                  <!-- Date Column -->
-                  <ng-container matColumnDef="date">
-                    <th mat-header-cell *matHeaderCellDef> Date </th>
-                    <td mat-cell *matCellDef="let element"> {{element.date}} </td>
-                  </ng-container>
-              
-                  <!-- Consumable Column -->
-                  <ng-container matColumnDef="consumable">
-                    <th mat-header-cell *matHeaderCellDef> Consumables </th>
-                    <td mat-cell *matCellDef="let element"> {{element.consumable}} </td>
-                  </ng-container>
-              
-                  <!-- Specification Column -->
-                  <ng-container matColumnDef="specification">
-                    <th mat-header-cell *matHeaderCellDef> Specification </th>
-                    <td mat-cell *matCellDef="let element"> {{element.specification}} </td>
-                  </ng-container>
-              <!-- Qty Column -->
-                  <ng-container matColumnDef="qty">
-                    <th mat-header-cell *matHeaderCellDef> Qty </th>
-                    <td mat-cell *matCellDef="let element"> {{element.qty}} </td>
-                  </ng-container>
-              <!-- price Column -->
-              <ng-container matColumnDef="price">
-                <th mat-header-cell *matHeaderCellDef>Price</th>
-                <td mat-cell *matCellDef="let element"> {{element.price}} </td>
-              </ng-container>
-            
-                <!-- Status -->
-                <ng-container matColumnDef="status">
-                  <th mat-header-cell *matHeaderCellDef colspan="2">Status in %</th>
-                  <td mat-cell *matCellDef="let element"> {{element.status}} </td>
-                </ng-container>
-            
-                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-                </table>
-              
-            
-              </div>
-              
-        </div>
-    </div>
+<!-- <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshCountries()">
+  <option [ngValue]="10">10 items per page</option>
+  <option [ngValue]="25">25 items per page</option>
+  <option [ngValue]="50">50 items per page</option>
+</select> -->
+<div class="d-flex p-2">
+	<ngb-pagination id="pick"
+		[collectionSize]="collectionSize"
+		[(page)]="page"
+		[pageSize]="pageSize"
+		(pageChange)="refreshCountries()"
+	>
+	</ngb-pagination>
+
+
 </div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th scope="col">Sno</th>
+			<th scope="col">Date</th>
+			<th scope="col">Equipment</th>
+			<th scope="col">Specification</th>
+      <th scope="col">Qty</th>
+      <th scope="col">Price</th>
+      <th scope="col" colspan="2">HMR</th>
+      <th>Total</th>
+      <th colspan="2">Total</th>
+      <th>Fuel Consumption</th>
+		</tr>
+    <tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>Opening</th>
+<th>Closing</th>
+<th></th>
+<th>Cumulative</th>
+<th>Alloted</th>
+<th></th>
+    </tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let country of countries">
+			<th scope="row">{{ country.id }}</th>
+			<td>{{ country.consumable }}</td>
+			<td>{{ country.specifiction}}</td>
+			<td>{{ country.qty}}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      
+    </tr>
+	</tbody>
+</table>
+

@@ -1,53 +1,221 @@
-import { Component, ViewChild, AfterViewInit } from '@angular/core';
+import { Component,} from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { DecimalPipe, NgFor } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { NgbPaginationModule, NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
+interface Country {
+	id?: number;
+	consumable: string;
+	specifiction: string;
+	qty: string;
+	price: string;
+  status:string;
+  col1:string;
+  col2:string;
+}
+const COUNTRIES: Country[] = [
+  // Your country objects here
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price:'',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price: '',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price: '',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price: '',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+    price: '',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+    consumable: '',
+    specifiction: '',
+		qty:'',
+		price: '',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price:'',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price:'',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price:'',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price:'',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price:'',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price:'',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price:'',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price:'',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price:'',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price:'',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price:'',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price:'',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  {
+		consumable: '',
+    specifiction: '',
+		qty:'',
+		price:'',
+    status:'',
+    col1:'',
+    col2:'',
+	},
+  
+];
 
 @Component({
   selector: 'app-table-component',
   templateUrl: './table-component.component.html',
-  styleUrls: ['./table-component.component.css']
+  styleUrls: ['./table-component.component.css'],
+
 })
-export class TableComponentComponent implements AfterViewInit {
-  displayedColumns: string[] =
-   ['position', 'date', 'consumable', 'specification', 'qty', 'price','status'];
-  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
+export class TableComponentComponent{
 
-  @ViewChild(MatPaginator) paginator!: MatPaginator;
+	page = 1;
+	pageSize = 10;
+	collectionSize = COUNTRIES.length;
+	countries:Country []=[];
 
-  ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
-  }
+	constructor() {
+		this.refreshCountries();
+	}
+
+	refreshCountries() {
+		this.countries = COUNTRIES.map((country, i:any) => ({ id: i + 1, ...country })).slice(
+			(this.page - 1) * this.pageSize,
+			(this.page - 1) * this.pageSize + this.pageSize,
+		);
+	}
+
+
 }
-
-export interface PeriodicElement {
-  date: string;     //date
-  position: number;  //sno
-  consumable: string;     //consumable
-  specification: string;   //specification
-  qty: string;
-  price: string;
-  status:string
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  { position: 1, date: '',consumable: '',specification: '',qty: '', price: '',status:'' },
-  { position: 2, date: '',consumable: '',specification: '',qty: '', price: '',status:'' },
-  { position: 3, date: '',consumable:'', specification: '',qty: '', price: '',status:''},
-  { position: 4, date: '',consumable: '',specification: '',qty: '', price: '',status:''},
-  { position: 5, date: '',consumable: '', specification: '', qty: '', price: '',status:'' },
-  { position: 6, date: '',consumable: '', specification: '', qty: '', price: '',status:'' },
-  { position: 7, date: '',consumable: '', specification: '', qty: '', price: '',status:''},
-  { position: 8, date: '',consumable: '', specification: '', qty: '', price: '',status:'' },
-  { position: 9, date: '',consumable: '', specification: '', qty: '', price: '',status:'' },
-  { position: 10,date: '',consumable:  '', specification: '',qty: '', price: '',status:'' },
-  { position: 11,date: '',consumable:  '', specification: '',qty: '', price: '',status:'' },
-  { position: 12, date: '',consumable: '',specification: '',qty: '', price: '',status:'' },
-  { position: 13,date: '',consumable:  '',specification: '',qty: '', price: '',status:'' },
-  { position: 14, date: '',consumable:  '',specification: '',qty: '', price: '',status:'' },
-  { position: 15,date: '',consumable: '',specification: '', qty: '', price: '',status:'' },
-  { position: 16, date: '',consumable:  '',specification: '', qty: '', price: '',status:'' },
-  { position: 17,date: '', consumable:  '',specification: '',qty: '', price: '',status:'' },
-  { position: 18, date: '',consumable:  '',specification: '',qty: '', price: '',status:'' },
-  { position: 19,date: '', consumable:  '',specification: '', qty: '', price: '',status:'' },
-  { position: 20, date: '',consumable:  '',specification: '',qty: '', price: '',status:'' },
-];

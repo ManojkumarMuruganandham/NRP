@@ -1,9 +1,6 @@
-import { Component,ViewChild,AfterViewInit} from '@angular/core';
+import { Component, OnInit,ViewChild,AfterViewInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
-
-
-
 
 interface Country {
 	id?: number;
@@ -190,18 +187,12 @@ const COUNTRIES: Country[] = [
 	},
   
 ];
-
-
-
-
-
-
 @Component({
-  selector: 'app-machinarytable',
-  templateUrl: './machinarytable.component.html',
-  styleUrls: ['./machinarytable.component.css']
+  selector: 'app-manpower-table',
+  templateUrl: './manpower-table.component.html',
+  styleUrls: ['./manpower-table.component.css']
 })
-export class MachinarytableComponent {
+export class ManpowerTableComponent {
   page = 1;
 	pageSize = 10;
 	collectionSize = COUNTRIES.length;
@@ -217,6 +208,5 @@ export class MachinarytableComponent {
 			(this.page - 1) * this.pageSize + this.pageSize,
 		);
 	}
-
 }
 

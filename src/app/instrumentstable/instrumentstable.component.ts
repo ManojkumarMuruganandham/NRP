@@ -4,7 +4,6 @@ import { MatPaginator } from '@angular/material/paginator';
 
 
 
-
 interface Country {
 	id?: number;
 	consumable: string;
@@ -191,17 +190,12 @@ const COUNTRIES: Country[] = [
   
 ];
 
-
-
-
-
-
 @Component({
-  selector: 'app-machinarytable',
-  templateUrl: './machinarytable.component.html',
-  styleUrls: ['./machinarytable.component.css']
+  selector: 'app-instrumentstable',
+  templateUrl: './instrumentstable.component.html',
+  styleUrls: ['./instrumentstable.component.css']
 })
-export class MachinarytableComponent {
+export class InstrumentstableComponent {
   page = 1;
 	pageSize = 10;
 	collectionSize = COUNTRIES.length;

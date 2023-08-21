@@ -18,6 +18,7 @@ import { ProjectaccessoneComponent } from './projectaccessone/projectaccessone.c
 import { ProjectaccesstwoComponent } from './projectaccesstwo/projectaccesstwo.component';
 import { ProjectaccessthreeComponent } from './projectaccessthree/projectaccessthree.component';
 import { ProjectaccessfourComponent } from './projectaccessfour/projectaccessfour.component';
+import { LoginComponent } from './login/login.component';
 
 // import { MachineryReportPageComponent } from './machinery-report-page/machinery-report-page.component';
 
@@ -97,6 +98,10 @@ const routes: Routes = [
 {
   path:'projectaccessfour',
   component: ProjectaccessfourComponent,
+},
+{
+  path:'login',
+  component: LoginComponent,
 },
 ];
 

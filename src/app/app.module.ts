@@ -30,6 +30,12 @@ import { ProjectaccesstwoComponent } from './projectaccesstwo/projectaccesstwo.c
 import { ProjectaccessthreeComponent } from './projectaccessthree/projectaccessthree.component';
 import { ProjectaccessfourComponent } from './projectaccessfour/projectaccessfour.component';
 import { MachinarytableComponent } from './machinarytable/machinarytable.component';
+import { ManpowerTableComponent } from './manpower-table/manpower-table.component';
+import { ToolsTableComponent } from './tools-table/tools-table.component';
+import { InstrumentstableComponent } from './instrumentstable/instrumentstable.component';
+import { SafetyTableComponent } from './safety-table/safety-table.component';
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -56,7 +62,12 @@ import { MachinarytableComponent } from './machinarytable/machinarytable.compone
     ProjectaccessthreeComponent,
     ProjectaccessfourComponent,
     MachinarytableComponent,
-
+    ManpowerTableComponent,
+    ToolsTableComponent,
+    InstrumentstableComponent,
+    SafetyTableComponent,
+    LoginComponent,
+ 
     
  
   
@@ -68,6 +79,7 @@ import { MachinarytableComponent } from './machinarytable/machinarytable.compone
     // NgxChartsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

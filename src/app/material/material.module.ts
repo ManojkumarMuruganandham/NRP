@@ -27,7 +27,8 @@ import { MatPaginator } from '@angular/material/paginator';
     NgxPaginationModule,
     MatPaginatorModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+
   ],
   exports:[MatSidenavModule,
     MatSlideToggleModule,
@@ -39,7 +40,8 @@ import { MatPaginator } from '@angular/material/paginator';
     NgbModule,
     NgxPaginationModule,
     MatPaginatorModule,
-     MatTableModule
+     MatTableModule,
+  
   ]
 
 })

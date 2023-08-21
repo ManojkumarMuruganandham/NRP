@@ -1,30 +1,21 @@
-.mat-mdc-table{
-    border: 1px solid #d7d7d7;
-    border-collapse: collapse;
+.d-flex{
+    justify-content: right;
+    
 }
-.mdc-data-table__header-cell{
-    border: 1px solid #d7d7d7;
+#pick{
+    background-color: #d7d7d7;
+    border-radius: 5px;
+    padding: 10px;
 }
-.mat-column-date{
-    border-left: 1px solid #d7d7d7;
- 
+.pagination{
+    margin: 0 !important;
+    padding: 0;
+
 }
-.mat-column-consumable{
-    border-left: 1px solid #d7d7d7;
- 
+.page-link a{
+    background-color: #d7d7d7 !important;
 }
-.mat-column-specification{
-    border-left: 1px solid #d7d7d7;
- 
-}
-.mat-column-qty{
-    border-left: 1px solid #d7d7d7;
- 
-}
-.mat-column-price{
-    border-left: 1px solid #d7d7d7;
- 
-}
-.mat-column-status{
-    border-left: 1px solid #d7d7d7;
+.page-link a:hover{
+    background-color: #665308 !important;
+    color: white;
 }

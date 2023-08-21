@@ -1,7 +1,6 @@
-import { Component,ViewChild,AfterViewInit} from '@angular/core';
+import { Component, OnInit,ViewChild,AfterViewInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
-
 
 
 
@@ -191,17 +190,12 @@ const COUNTRIES: Country[] = [
   
 ];
 
-
-
-
-
-
 @Component({
-  selector: 'app-machinarytable',
-  templateUrl: './machinarytable.component.html',
-  styleUrls: ['./machinarytable.component.css']
+  selector: 'app-tools-table',
+  templateUrl: './tools-table.component.html',
+  styleUrls: ['./tools-table.component.css']
 })
-export class MachinarytableComponent {
+export class ToolsTableComponent {
   page = 1;
 	pageSize = 10;
 	collectionSize = COUNTRIES.length;
@@ -219,4 +213,3 @@ export class MachinarytableComponent {
 	}
 
 }
-
