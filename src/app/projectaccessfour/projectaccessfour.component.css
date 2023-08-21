@@ -1,0 +1,110 @@
+#bold{
+    color: #B18F04;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+#thin{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 50%;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.back button{
+    border: none;
+    background-color: white;
+    position: absolute;
+    top: 35px;
+    left: -2px;
+  }
+  .projectcode select{
+    border-color: #d7d7d7;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 3px;
+  }
+  .projectcode p{
+    font-size: 12px;
+    color: black;
+  }
+  .item span{
+    color: red;
+  }
+  #dim{
+    color: #d7d7d7;
+    font-size: 12px;
+  }
+  .item input{
+    width: 140px;
+    border-radius: 5px;
+    height: 30px;
+   
+  }
+  .item p{
+    font-size: 12px;
+  }
+  .item select{
+    width: 140px;
+    border-radius: 5px;
+    height: 30px;
+    border-color: #d7d7d7;
+  
+  }
+  .lorem p{
+    font-size: 12px;
+  }
+  .line{
+    width: 98%;
+    border: 1px solid #d7d7d7;
+    margin-top: 10px;
+    margin-bottom: 11px;
+  }
+  #projectcreateaccess{
+    margin-top: 10px;
+    padding: 25px;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+  }
+  .create{
+    margin-top: 5px;
+  }
+  .create button{
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    width: 55px;
+    border-radius: 5px;
+    border: none;
+    background-color: #665308;
+  }
+#daily{
+    background-color: #d7d7d7;
+}
+.item{
+  position: relative;
+}
+.item button{
+  position: absolute;
+  border: none;
+  color: white;
+  background-color: #665308;
+  border-radius: 5px;
+
+}
+.lorem{
+  position: relative;
+}
+.lorem img{
+  position: absolute;
+  top: 24px;
+  left: 117px;
+}

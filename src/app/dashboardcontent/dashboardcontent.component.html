@@ -1,0 +1,266 @@
+<!-- <div class="container-fluid" style="background-color: white;" id="mainbody">
+  <div class="row">
+    <div class="col">
+      <header>
+        <div class="header">
+          <div class="itemname">
+            <div class="dashboard">
+              <p id="bold">Dashboard</p>
+              <p id="thin">Dashboard</p>
+            </div>
+          </div>
+          <div class="search">
+            <div class="options">
+              <div class="lens">
+                <img src="/assets/image/search.svg" alt="">
+              </div>
+              <div class="notify">
+                <img src="/assets/image/bell.svg" alt="">
+              </div>
+              <div class="logo">
+                <img src="/assets/image/Frame 94.png" alt="">
+              </div>
+              <div class="logout">
+
+                <a href="#">Logout</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="selectsection">
+        <div class="date">
+          <div class="item">
+            <p>Date <span>*</span></p>
+            <input type="date" placeholder="16-Dec-2021" name="" id="">
+          </div>
+        </div>
+        <div class="item">
+          <p>Project code <span>*</span></p>
+          <select name="" id="">
+            <option value="">ID101</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Project Master <span>*</span></p>
+          <select name="" id="">
+            <option value="">Project Master</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Acitivity <span>*</span></p>
+          <select name="" id="">
+            <option value="">Activity</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Description <span>*</span></p>
+          <select name="" id="">
+            <option value="">Activity</option>
+          </select>
+        </div>
+        <div class="btn">
+          <button><a href="#"><mat-icon>arrow_forward</mat-icon></a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="projectcode">
+        <div class="project_section">
+          <p id="procode">Project Code</p>
+          <p id="num">0011001</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div id="chartContainer"></div>
+    </div>
+    <div class="col">
+      <div class="piechart"></div>
+    </div>
+  </div>
+  <div class="container" id="gencontainer">
+    <div class="generalstatistics">
+      <p id="general">General Statistics</p>
+      <p id="material">Material Observation</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="general-item">
+          <p id="gen-num">1</p>
+          <p id="topic">Pipeline</p>
+          <div class="generaldata">
+            <div class="div">
+              <p>Total Expense</p>
+              <P id="result">100200</P>
+            </div>
+            <div class="div">
+              <p>Quantity</p>
+              <p id="result">12</p>
+            </div>
+            <div class="div">
+              <p>Total Profit</p>
+              <p id="result">100200</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="general-item" id="blue">
+          <p id="gen-num">2</p>
+          <p id="topic">Material</p>
+          <div class="generaldata">
+            <div class="div">
+              <p>Total Expense</p>
+              <P id="result">100200</P>
+            </div>
+            <div class="div">
+              <p>Quantity</p>
+              <p id="result">12</p>
+            </div>
+            <div class="div">
+              <p>Total Profit</p>
+              <p id="result">100200</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="general-item" id="voilet">
+          <p id="gen-num">3</p>
+          <p id="topic">Material</p>
+          <div class="generaldata">
+            <div class="div">
+              <p>Total Expense</p>
+              <P id="result">100200</P>
+            </div>
+            <div class="div">
+              <p>Quantity</p>
+              <p id="result">12</p>
+            </div>
+            <div class="div">
+              <p>Total Profit</p>
+              <p id="result">100200</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-4">
+      <div class="box">
+        <div class="tool">
+          <p id="tool-head">Tools & Tackles Report</p>
+
+          <div class="toolsopt">
+            <select name="" id="">
+              <option value="">Description</option>
+            </select>
+          </div>
+          <div class="topplanned">
+            <div class="planned">
+              <p id="qty">Planned Qty</p>
+              <p id="qtynum">25</p>
+            </div>
+            <div class="plannedex">
+              <p id="qty">Planned Expense</p>
+              <p id="qtynum">12345</p>
+            </div>
+
+          </div>
+          <div class="bottomplanned">
+            <div class="planned">
+              <p id="qty">Actual Qty</p>
+              <p id="qtynum">25</p>
+            </div>
+            <div class="plannedex">
+              <p id="qty">Actual Expense</p>
+              <p id="qtynum">3500</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-4">
+      <div class="box">
+        <div class="tool">
+          <p id="tool-head">Instruments Report</p>
+
+          <div class="toolsopt">
+            <select name="" id="">
+              <option value="">Description</option>
+            </select>
+          </div>
+          <div class="topplanned">
+            <div class="planned">
+              <p id="qty">Planned Qty</p>
+              <p id="qtynum">25</p>
+            </div>
+            <div class="plannedex">
+              <p id="qty">Planned Expense</p>
+              <p id="qtynum">12345</p>
+            </div>
+
+          </div>
+          <div class="bottomplanned">
+            <div class="planned">
+              <p id="qty">Actual Qty</p>
+              <p id="qtynum">25</p>
+            </div>
+            <div class="plannedex">
+              <p id="qty">Actual Expense</p>
+              <p id="qtynum">3500</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-4">
+      <div class="box">
+        <div class="tool">
+          <p id="tool-head">Safety Tools Report</p>
+
+          <div class="toolsopt">
+            <select name="" id="">
+              <option value="">Description</option>
+            </select>
+          </div>
+          <div class="topplanned">
+            <div class="planned">
+              <p id="qty">Planned Qty</p>
+              <p id="qtynum">25</p>
+            </div>
+            <div class="plannedex">
+              <p id="qty">Planned Expense</p>
+              <p id="qtynum">12345</p>
+            </div>
+
+          </div>
+          <div class="bottomplanned">
+            <div class="planned">
+              <p id="qty">Actual Qty</p>
+              <p id="qtynum">25</p>
+            </div>
+            <div class="plannedex">
+              <p id="qty">Actual Expense</p>
+              <p id="qtynum">3500</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->

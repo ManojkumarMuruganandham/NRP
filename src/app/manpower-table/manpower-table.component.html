@@ -1,0 +1,54 @@
+<!-- <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshCountries()">
+  <option [ngValue]="10">10 items per page</option>
+  <option [ngValue]="25">25 items per page</option>
+  <option [ngValue]="50">50 items per page</option>
+</select> -->
+<div class="d-flex p-2">
+	<ngb-pagination id="pick"
+		[collectionSize]="collectionSize"
+		[(page)]="page"
+		[pageSize]="pageSize"
+		(pageChange)="refreshCountries()"
+	>
+	</ngb-pagination>
+
+
+</div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th scope="col">Sno</th>
+			<th scope="col">Date</th>
+			<th scope="col">Category</th>
+			<th scope="col" colspan="2">Working Hours</th>
+      <th scope="col">Total Hours</th>
+      <th scope="col" colspan="2">Total</th>
+      <th>Status in %</th>
+		</tr>
+    <tr>
+<th></th>
+<th></th>
+<th></th>
+<th>Qty</th>
+<th>Price</th>
+<th></th>
+<th>Cumulative</th>
+<th>Alloted</th>
+<th></th>
+    </tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let country of countries">
+			<th scope="row">{{ country.id }}</th>
+			<td>{{ country.date }}</td>
+			<td>{{ country.category}}</td>
+			<td>{{ country.qty}}</td>
+      <td>{{ country.price}}</td>
+    <td>{{ country.totalhours}}</td>
+    <td>{{ country.cumulative}}</td>
+    <td>{{ country.alloted}}</td>
+    <td>{{ country.status}}</td>
+    </tr>
+	</tbody>
+</table>
+

@@ -1,0 +1,218 @@
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+#bold{
+    color: #B18F04;
+    font-size: 24px;
+    font-weight: 700;
+}
+#thin{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 50%;
+}
+selectsection{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: end; */
+  
+    padding: 10px;
+  }
+  .item p{
+    color: black;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .item span{
+    color: red;
+  }
+  .item select{
+    border-color: #D7D7D7;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 50%;
+    width: 100%;
+  }
+  .item input{
+ opacity: 50%;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #D7D7D7;
+   height: 25px;
+   width: 100%;
+  }
+  .start{
+    display: flex;
+  }
+
+  .master p{
+    color: black;
+  }
+  .master span{
+    color: red;
+  }
+  .master select{
+    border: 1px solid #d7d7d7;
+    width: 260px;
+    padding: 3px;
+    border-radius: 5px;
+  }
+  .tunneling p{
+    color: black;
+  }
+  .tunneling span{
+    color: red;
+  }
+  .selecttunnel{
+    display: flex;
+  }
+  .selecttunnel img{
+    width: 30px;
+    height: 30px;
+  }
+  .selecttunnel p{
+    width: 260px;
+  }
+  .addpro{
+padding-left: 148px;
+  }
+  .activity p{
+    opacity: 50%;
+  }
+  .selectactivity select{
+    border: 1px solid #d7d7d7;
+    width: 260px;
+    border-radius: 5px;
+    padding: 3px;
+}
+.selectactivity button{
+  background-color: #665308;
+  color: white;
+  margin-left: 3px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.addpro button{
+  border: none;
+    background-color: #665308;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.deleteactivity{
+  display: flex;
+  margin-top: 5px;
+}
+.deleteactivity p{
+  width: 260px;
+}
+.deleteactivity img{
+  width: 30px;
+  height: 30px;
+}
+.split{
+  border: 1px solid #d7d7d7;
+    width: 858px;
+    opacity: 50%;
+}
+.back button{
+  border: none;
+  background-color: white;
+}
+.projectcodebox{
+  border: 1px solid #d7d7d7;
+    padding: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    /* width: 898px; */
+}
+.locationbox{
+  border: 1px solid #d7d7d7;
+    margin-top: 10px;
+    width: 500px;
+    padding: 13px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.locationopt{
+  display: flex;
+  position: relative;
+}
+.locationopt input{
+  width: 100%;
+    border: 1px solid #d7d7d7;
+    padding: 3px;
+    border-radius: 5px;
+}
+.location span{
+  color: red;
+}
+.locationopt a{
+  position: absolute;
+    left: 277px;
+    top: 3px;
+}
+.locationopt button{
+  border: none;
+  background-color: #665308;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.locationdelete{
+  display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+.locationdelete img{
+  width: 30px;
+  height: 30px;
+}
+.createbtn button{
+  border: none;
+  background-color: #665308;
+  color: white;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+
+@media(min-width:320px) and (max-width:700px){
+
+  .locationbox{
+    width: unset;
+  }
+  .locationopt a{
+    left: 135px;
+  }
+  .reports{
+    position: relative;
+    padding-top: 68px;
+  }
+  .back{
+    position: absolute;
+    top: 36px;
+  }
+  .selectactivity select{
+    width: 87%;
+  }
+  .split{
+    margin-top: 7px;
+    margin-bottom: 9px;
+  }
+}

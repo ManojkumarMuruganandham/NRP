@@ -1,0 +1,1059 @@
+*****dashboard.html****
+
+
+
+<div class="dashboard">
+    <a href="#">Dashboard</a>
+</div>
+
+
+
+*****dashboard.css********
+
+
+
+.dashboard{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.dashboard a{
+    text-decoration: none;
+    color: black;
+}
+
+
+************
+**********dailyoperationdata*************
+
+<div class="daily">
+    <a href="#">Daily Operation Data</a>
+</div>
+
+
+.daily{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.daily a{
+    text-decoration: none;
+    color: black;
+}
+
+
+***********
+*****pms.html*******
+
+<div class="pms">
+    
+    <img src="../assets/image/Frame 94.png" alt="">
+        
+ <div class="logo-content">
+    <p class="bold">PMS</p>
+    <p class="small">Project Monitoring System</p>
+ </div>
+</div>
+
+
+********pms.css**
+
+.pms{
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #bold{
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+  }
+  .small{
+    font-size: 8px;
+       color: black;
+  }
+
+
+
+************
+
+**********setting.html*****
+
+<div class="setting">
+
+    <ul>
+        <span>Settings</span>
+        <li id="list">
+
+<a href="#">Project Master</a>
+<a href="#">Project Code</a>
+<a href="#">Project Team</a>
+<a href="#">Project Access</a>
+
+
+        </li>
+    </ul>
+</div>
+<div class="footimg">
+    <img src="assets/image/logo.png" alt="PMS-LOGO">
+</div>
+
+
+setting.css
+*************
+
+#list{
+    display: none;
+    background-color: white;
+    height: 14vh;
+    padding: 13px;
+    line-height: 23px;
+    border-radius: 5px;
+}
+#list a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+#list a:hover{
+    color: goldenrod;
+}
+.setting{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.setting:hover{
+    background-color: white;
+}
+.setting:hover #list{
+display: block;
+}
+.footimg{
+    width: 186px !important;
+    height: 78px;
+}
+.footimg img{
+    width: 100%;
+    height: 100%;
+}
+*************
+
+
+****projectrequest*****
+
+
+
+<div class="projectreq">
+
+    <ul>
+        <span>Project Requirement</span>
+        <li id="list">
+
+<a href="">Project Requirement</a>
+<a href="#">Consumables</a>
+<a href="#">Machinery</a>
+<a href="#">Man Power</a>
+<a href="#">Tools & Tackles</a>
+<a href="#">Instruments</a>
+<a href="#">Safety Tools</a>
+
+        </li>
+    </ul>
+</div>
+
+
+
+*********
+projectrequest.css
+
+#list{
+    display: none;
+    background-color: white;
+    height: 23vh;
+    padding: 16px;
+    line-height: 23px;
+    border-radius: 5px;
+}
+#list a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+#list a:hover{
+    color: goldenrod;
+}
+.projectreq{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.projectreq:hover{
+    background-color: white;
+    
+}
+.projectreq:hover #list{
+display: block;
+}
+
+
+
+
+
+************
+
+
+
+
+******app.component.html*******
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.3/chart.min.js">
+</head>
+<body>
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" style="width: 252px;">
+      <app-pms></app-pms>
+<mat-nav-list>
+  <app-dashboard></app-dashboard>
+<a mat-nav-list-item>
+  <app-projectrequest></app-projectrequest>
+</a>
+<a mat-nav-list-item>
+  <app-dailyoperationdata></app-dailyoperationdata>
+</a>
+<a mat-nav-list-item [routerLink]="['reports']" >
+  <app-report></app-report>
+</a>
+
+<a mat-nav-list-item [routerLink]="['setting']" class="setting">
+  <app-setting></app-setting>
+</a>
+</mat-nav-list>
+     
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="toggle(drawer)">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
+       
+      </button>
+    
+    </div>
+    <div class="container" id="right-content">
+      <div class="right">
+   
+      
+        <app-reports></app-reports>
+       
+      </div>
+        </div>
+  
+      </mat-drawer-container>
+</body>
+</html>
+
+<!-- <router-outlet></router-outlet> -->
+
+****************style.css******************
+
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body{
+    background-color: #FFF8DC;
+  }
+  
+  .example-container {
+    /* width: 97vw;
+    height: 97vh; */
+    }
+    
+    /* .example-sidenav-content {
+     
+    } */
+    .setting{
+      margin-top: 32px;
+    }
+    .example-sidenav {
+      padding: 20px;
+    }
+    .mat-drawer-side{
+      background-color: #FFF8DC !important;
+      border: none !important;
+    }
+    .mat-mdc-list-base {
+      display: flex !important;
+      flex-direction: column;
+      /* justify-content: space-around; */
+      height: 56vh;
+      align-items: center;
+    }
+    .mat-mdc-list-base a{
+      display: flex;
+      align-items: center;
+    }
+    .mat-drawer-content{
+      display: flex !important;
+      height: 12% !important;
+    }
+    .mat-drawer-container{
+      overflow: unset !important;
+    }
+    .mat-drawer-content{
+      overflow: unset !important;
+    }
+   #right-content{
+    background-color: white;
+    width: 1130px;
+    height: 643px;
+    border-radius: 10px;
+    padding: 25px;
+   }
+  
+ 
+
+
+
+****************report.html**********************
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <header>
+            <div class="top">
+                <div class="reports">
+                    <p id="bold">Consumables Reports</p>
+                    <p id="thin">Consumables Reports / Reports</p>
+                </div>
+                <div class="options">
+                    <div class="lens">
+                      <img src="/assets/image/search.svg" alt="">
+                    </div>
+                    <div class="notify">
+                      <img src="/assets/image/bell.svg" alt="">
+                    </div>
+                    <div class="logo">
+                      <img src="/assets/image/Frame 94.png" alt="">
+                    </div>
+                    <div class="logout">
+      
+                      <a href="#">Logout</a>
+                    </div>
+      
+                  </div>
+            </div>
+            </header>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="selectsection">
+                <div class="date">
+                  <div class="item" id="date">
+                    <p>Date <span>*</span></p>
+                   <div class="start">
+                    <input type="date" placeholder="16-Dec-2021" name="" id="">
+                    <div class="div">-</div>
+                    <input type="date" placeholder="16-Dec-2021" name="" id="">
+                   </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <p>Project Company <span>*</span></p>
+                  <select name="" id="">
+                    <option value="">Project Company</option>
+                  </select>
+                </div>
+                <div class="item">
+                  <p>Project Code<span>*</span></p>
+                  <select name="" id="">
+                    <option value="">Project Code</option>
+                  </select>
+                </div>
+                <div class="item">
+                  <p>Chainage <span>*</span></p>
+                  <select name="" id="">
+                    <option value="">Chainage </option>
+                  </select>
+                </div>
+                <div class="item">
+                  <p>Acitivity<span>*</span></p>
+                  <select name="" id="">
+                    <option value="">Activity</option>
+                  </select>
+                </div>
+                <div class="btn">
+                  <button><a href="#"><mat-icon>arrow_forward</mat-icon></a></button>
+                  <div class="msexcel">
+                    <img src="assets/image/excel.jpg" alt="">
+                  </div>
+                </div>
+               
+              </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+    <div class="skip">
+      <div class="pages">
+        <div class="num">
+          <p>10</p>
+        </div>
+        <div class="num">
+          <p>25</p>
+        </div>
+        <div class="num">
+          <p>50</p>
+        </div>
+        <div class="num">
+          <p>100</p>
+        </div>
+</div>
+    </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12" >
+<div class="tableinfo">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Sno</th>
+        <th scope="col">Date</th>
+        <th scope="col">Consumables</th>
+        <th scope="col">Specification</th>
+        <th scope="col">Qty</th>
+        <th scope="col">Price</th>
+        <th scope="col" colspan="2">Status in %</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Qty</td>
+        <td>Price</td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id="data">10 <span><mat-icon>keyboard_arrow_up</mat-icon></span> </td>
+        <td></td>
+      
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+       
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+     
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      
+      </tr>
+      <tr>
+        <th scope="row">8</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      
+      </tr>
+      <tr>
+        <th scope="row">9</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+       <div class="arrow">
+     <div class="arrows">
+      <a href="#"><mat-icon>keyboard_arrow_left</mat-icon></a>
+      <a href="#"><mat-icon>keyboard_arrow_right</mat-icon></a>
+     </div>
+       </div>
+      </div>
+    </div>
+</div>
+
+
+***********report.css********
+
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+#bold{
+    color: #B18F04;
+    font-size: 24px;
+    font-weight: 700;
+}
+#thin{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 50%;
+}
+#line{
+    width: 5px;
+    height: 1px;
+    background-color: lightgray;
+}
+.logout a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.start{
+   display: flex;
+}
+.selectsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+  
+    padding: 10px;
+  }
+  .item p{
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .item span{
+    color: red;
+  }
+  .item select{
+    border-color: #D7D7D7;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 50%;
+  }
+  .item input{
+    border-color: #D7D7D7;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px;
+    width: 80px;
+  }
+  .btn button{
+    background-color: #B18F04;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+  }
+  .btn button a{
+    color: white;
+  }
+  .msexcel{
+    width: 25px;
+    height: 25px;
+  }
+.msexcel img{
+  width: 100%;
+}
+.btn{
+  justify-content: space-between;
+    display: flex;
+    width: 100px;
+}
+.pages{
+  background-color: #F5F5F5;
+  width: 166px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 5px;
+  height: 47px;
+  margin-bottom: 6px;
+}
+.skip{
+  display: flex;
+  justify-content: end;
+}
+.pages p{
+  width: 30px;
+  height: 33px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.pages p:hover{
+  color: white;
+  background-color: #665308;
+  cursor: pointer;
+}
+
+.table, th, td {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+  
+}
+#data{
+  display: flex;
+}
+#data span{
+  color: green;
+}
+.tableinfo{
+  width: 800px;
+  line-height: 13px;
+}
+.arrow{
+  display: flex;
+    width: 800px;
+    justify-content: center;
+  
+ 
+}
+.arrows{
+  width: 30px;
+  height: 29px;
+  display: flex;
+  gap: 20px;
+}
+.arrow a{
+  border: 1px solid lightgray;
+  border-radius: 5px;
+ 
+}
+.arrow:hover{
+  cursor: pointer;
+}
+@media screen and(min-width:320px)and (max-width:767px) {
+  #bold{
+    font-size: 16px !important;
+    margin-bottom: 0;
+  } 
+#thin{
+  font-size: 9px;
+  margin-bottom: 0;
+}
+.selectsection{
+  padding: 0;
+}
+.table th{
+  font-size: 12px;
+}
+
+   }
+
+
+
+***********machinery report.html
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <header>
+            <div class="top">
+                <div class="reports">
+                    <p id="bold">Machinery Reports</p>
+                    <p id="thin">Reports / Machinery Reports</p>
+                </div>
+                <div class="options">
+                    <div class="lens">
+                      <img src="/assets/image/search.svg" alt="">
+                    </div>
+                    <div class="notify">
+                      <img src="/assets/image/bell.svg" alt="">
+                    </div>
+                    <div class="logo">
+                      <img src="/assets/image/Frame 94.png" alt="">
+                    </div>
+                    <div class="logout">
+      
+                      <a href="#">Logout</a>
+                    </div>
+      
+                  </div>
+            </div>
+            </header>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="selectsection">
+                <div class="date">
+                  <div class="item" id="date">
+                    <p>Period <span>*</span></p>
+                   <div class="start">
+                    <input type="date" placeholder="16-Dec-2021" name="" id="">
+                    <div class="div">-</div>
+                    <input type="date" placeholder="16-Dec-2021" name="" id="">
+                   </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <p>Project Company <span>*</span></p>
+                  <select name="" id="">
+                    <option value="">Project Company</option>
+                  </select>
+                </div>
+                <div class="item">
+                  <p>Project Code<span>*</span></p>
+                  <select name="" id="">
+                    <option value="">Project Code</option>
+                  </select>
+                </div>
+                <div class="item">
+                  <p>Chainage <span>*</span></p>
+                  <select name="" id="">
+                    <option value="">Chainage </option>
+                  </select>
+                </div>
+                <div class="item">
+                  <p>Acitivity<span>*</span></p>
+                  <select name="" id="">
+                    <option value="">Activity</option>
+                  </select>
+                </div>
+                <div class="item">
+                    <p>Equipment<span>*</span></p>
+                    <select name="" id="">
+                      <option value="">Equipment</option>
+                    </select>
+                  </div>
+                <div class="btn">
+                  <button><a href="#"><mat-icon>arrow_forward</mat-icon></a></button>
+                  <div class="msexcel">
+                    <img src="assets/image/excel.jpg" alt="">
+                  </div>
+                </div>
+               
+              </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+    <div class="skip">
+      <div class="pages">
+        <div class="num">
+          <p>10</p>
+        </div>
+        <div class="num">
+          <p>25</p>
+        </div>
+        <div class="num">
+          <p>50</p>
+        </div>
+        <div class="num">
+          <p>100</p>
+        </div>
+</div>
+    </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12" >
+<div class="tableinfo">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Sno</th>
+        <th scope="col">Date</th>
+        <th scope="col">Equipment</th>
+        <th scope="col">Specification</th>
+        <th scope="col">Qty</th>
+        <th scope="col">Price</th>
+        <th scope="col" colspan="2">HMR</th>
+        <th scope="col">Total</th>
+        <th scope="col" colspan="2">Total</th>
+        <th scope="col">Fuel Consumption</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Qty</td>
+        <td>Price</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      
+   
+      
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Openning</td>
+        <td>Closing</td>
+        <td></td>
+        <td>Cumulative</td>
+        <td>Alloted</td>
+        <td></td>
+     
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+     
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+       
+        
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        
+        
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+       
+        
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+       
+        
+        
+      </tr>
+      <tr>
+        <th scope="row">8</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+       
+        
+      </tr>
+      <tr>
+        <th scope="row">9</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+       
+    
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+       <div class="arrow">
+     <div class="arrows">
+      <a href="#"><mat-icon>keyboard_arrow_left</mat-icon></a>
+      <a href="#"><mat-icon>keyboard_arrow_right</mat-icon></a>
+     </div>
+       </div>
+      </div>
+    </div>
+</div>
+************ same css of report.css****
